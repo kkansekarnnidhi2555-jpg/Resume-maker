@@ -1,0 +1,16 @@
+CREATE DATABASE resumemaker;
+
+USE resumemaker;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255),
+  password VARCHAR(255)
+);
+
+CREATE TABLE resumes (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user_id INT,
+  data JSON,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

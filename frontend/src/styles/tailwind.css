@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #FDF6F2; /* soft peach background */
+  color: #2D2D2D;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom reusable classes */
+
+.card {
+  @apply bg-white p-4 rounded-xl shadow-md;
+}
+
+.btn-primary {
+  @apply bg-primary text-white px-4 py-2 rounded hover:opacity-90 transition;
+}
+
+.input {
+  @apply w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-primary;
+}
